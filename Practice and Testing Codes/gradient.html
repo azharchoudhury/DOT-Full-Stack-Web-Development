@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+
+    <style>
+
+        .gradients{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #linear{
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 30px;
+            background-image: linear-gradient(to right, #ee0beec4, #00a6ffc4, #ffffff );
+        }
+
+
+        #radial{
+            color: white;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 30px;
+            background-image: radial-gradient(yellow, green, white);
+        }
+        
+        #conical{
+            color: white;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 30px;
+            background-image: conic-gradient(red 90deg, yellow, green);
+        }
+
+        #flag{
+            height: 250px;
+            width: 200px;
+            box-sizing: border-box;
+            background-image: linear-gradient(#ffa600fa, white, green); 
+        }
+    </style>
+</head>
+<body>
+    <div class="gradients">
+        <div id="linear">Let's test linear gradient</div>
+    
+        <br>
+    
+        <div id="radial">Let's test radial gradient</div>
+    
+        <br>
+    
+        <div id="conical">Let's test conical gradient</div>
+
+        <br>
+
+        <div id="flag"></div>
+    </div>
+</body>
+</html>

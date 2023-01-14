@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Box Shadow</title>
+
+    <style>
+        #first-heading{
+            text-shadow: 5px 5px 5px maroon;
+            text-shadow: 5px 5px 5px maroon, 10px 10px 10px yellow, 15px 15px 15px green;
+        }
+
+        #second-heading{
+            text-shadow: 5px 5px 5px blue, 10px 10px 10px yellow, 30px 60px 4px red;
+        }
+
+        #box{
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #first-box{
+            box-sizing: border-box;
+            background-color: yellow;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            padding: 30px;
+            box-shadow: 10px 10px 15px blue, 20px 20px 15px red, 50px 50px 20px green;
+        }
+
+        #second-box{
+            background-color: rgb(79, 223, 79);
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 50px;
+            box-shadow: -20px -20px 15px blue;
+        }
+
+        #border-box{
+            background-color: #a652ef;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 20px;
+            margin: 100px auto;
+            box-shadow: 0 0 0 10px rgb(8, 205, 244);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="first-heading">Whatever it takes</h1>
+    <h1 id="second-heading">Let's play with shadows</h1>
+
+    <br><br>
+
+    <div id="box">
+        <h2 id="first-box">Box Shadow</h2>
+        <h2 id="second-box">Negative value</h2>
+    </div>
+
+
+    <div id="border-box">
+        <h2>Border box shadow</h2>
+    </div>
+</body>
+</html>
