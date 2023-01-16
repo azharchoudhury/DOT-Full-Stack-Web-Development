@@ -53,6 +53,51 @@
             margin: 100px auto;
             box-shadow: 0 0 0 10px rgb(8, 205, 244);
         }
+
+
+        .boxes{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            row-gap: 100px;
+            margin: 50px;
+        }
+
+        .box-test{
+            width: 100px;
+            height: 100px;
+        }
+
+
+        #one{
+            box-shadow: 0 3px 10px rgb(0 0 0 /0.2);
+        }
+
+        #two{
+            box-shadow: 10px 10px black, -10px -10px gray;
+        }
+
+        #three{
+            box-shadow: 0 0 5px 5px red;
+        }
+
+        #four{
+            background-color: #e7e4e4;
+            box-shadow: 0 8px 8px -5px #15aaea;
+        }
+
+        #five{
+            border-radius: 50%;
+            box-shadow: 0 0 50px #acacac;
+        }
+
+        #six{
+            box-shadow: 0 5px 2px -3px black, 0 -5px 2px -3px black;
+        }
+
+
+        
+
     </style>
 </head>
 <body>
@@ -69,6 +114,16 @@
 
     <div id="border-box">
         <h2>Border box shadow</h2>
+    </div>
+
+    
+    <div class="boxes">
+        <div class="box-test" id="one"></div>
+        <div class="box-test" id="two"></div>
+        <div class="box-test" id="three"></div>
+        <div class="box-test" id="four"></div>
+        <div class="box-test" id="five"></div>
+        <div class="box-test" id="six"></div>
     </div>
 </body>
 </html>
